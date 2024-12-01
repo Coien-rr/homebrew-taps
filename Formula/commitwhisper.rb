@@ -8,13 +8,15 @@ class Commitwhisper < Formula
   sha256 "1e9828526fb079893e11405d5617aa3764ec19222a9e8c94c3da83a7138c9d4f"
   license ""
 
-  # depends_on "cmake" => :build
+  depends_on "go" => :build
 
   def install
     # Remove unrecognized options if they cause configure to fail
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     # system "./configure", "--disable-silent-rules", *std_configure_args
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    ENV["GOPROXY"] = "https://goproxy.io"
+    system "make"
     bin.install "commitwhisper" => "cw"
   end
 
