@@ -16,7 +16,7 @@ class Commitwhisper < Formula
     # system "./configure", "--disable-silent-rules", *std_configure_args
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
     ENV["GOPROXY"] = "https://goproxy.io"
-    system "make"
+    system "make", "build"
     bin.install "commitwhisper" => "cw"
   end
 
