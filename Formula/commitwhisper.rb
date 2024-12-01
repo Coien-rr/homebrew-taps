@@ -5,7 +5,7 @@ class Commitwhisper < Formula
   desc ""
   homepage "https://github.com/Coien-rr/CommitWhisper"
   url "https://github.com/Coien-rr/CommitWhisper/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "1e9828526fb079893e11405d5617aa3764ec19222a9e8c94c3da83a7138c9d4f"
+  sha256 "c52b916c6c3f8c6318ad3ff488987c08c0ccf406d8ea8e6838e9fdd34c3b3d12"
   license ""
 
   depends_on "go" => :build
