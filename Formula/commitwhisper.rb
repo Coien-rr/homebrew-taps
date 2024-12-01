@@ -4,7 +4,7 @@
 class Commitwhisper < Formula
   desc ""
   homepage "https://github.com/Coien-rr/CommitWhisper"
-  url "https://github.com/Coien-rr/CommitWhisper/archive/refs/tags/v0.1.1.tar.gz"
+  url "https://github.com/Coien-rr/CommitWhisper/archive/refs/tags/v0.1.2.tar.gz"
   sha256 "1e9828526fb079893e11405d5617aa3764ec19222a9e8c94c3da83a7138c9d4f"
   license ""
 
@@ -17,7 +17,7 @@ class Commitwhisper < Formula
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
     ENV["GOPROXY"] = "https://goproxy.io"
     system "make", "build"
-    bin.install "commitwhisper" => "cw"
+    bin.install "cw"
   end
 
   test do
