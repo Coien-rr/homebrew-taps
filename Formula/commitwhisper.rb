@@ -15,7 +15,7 @@ class Commitwhisper < Formula
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     # system "./configure", "--disable-silent-rules", *std_configure_args
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    ENV["GOPROXY"] = "https://goproxy.io"
+    ENV["GOPROXY"] = "https://goproxy.cn"
     system "make", "build"
     bin.install "cw"
   end
