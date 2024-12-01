@@ -15,7 +15,7 @@ class CommitwhisperAT011 < Formula
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     # system "./configure", "--disable-silent-rules", *std_configure_args
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    bin.install "cw"
+    bin.install "commitwhisper" => "cw"
   end
 
   test do
