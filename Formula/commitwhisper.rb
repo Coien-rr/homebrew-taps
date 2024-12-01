@@ -3,7 +3,7 @@
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Commitwhisper < Formula
   desc ""
-  homepage ""
+  homepage "https://github.com/Coien-rr/CommitWhisper"
   url "https://github.com/Coien-rr/CommitWhisper/archive/refs/tags/v0.1.1.tar.gz"
   sha256 "1e9828526fb079893e11405d5617aa3764ec19222a9e8c94c3da83a7138c9d4f"
   license ""
@@ -15,7 +15,7 @@ class Commitwhisper < Formula
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     # system "./configure", "--disable-silent-rules", *std_configure_args
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
-    bin.install "cw"
+    bin.install "commitwhisper" => "cw"
   end
 
   test do
